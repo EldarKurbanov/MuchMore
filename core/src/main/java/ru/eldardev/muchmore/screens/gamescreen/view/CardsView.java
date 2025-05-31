@@ -10,7 +10,9 @@ public class CardsView extends Table {
         super(skin);
         super.setDebug(Settings.DEBUG);
 
-        super.add(new Label("Cards of the player", skin)).colspan(ViewSettings.GENERAL_CARDS);
+        super.add(new Label("Cards of the player", skin))
+            .colspan(ViewSettings.GENERAL_CARDS)
+            .height(ViewSettings.CARDS_VIEW_HEIGHT);
 
         super.row();
 
