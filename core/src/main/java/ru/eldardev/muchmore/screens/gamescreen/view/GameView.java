@@ -17,7 +17,7 @@ public class GameView extends Table {
 
         super.add(playersView);
         super.row();
-        super.add();
+        super.add(new CardsView(super.getSkin()));
     }
 
     public void dispose() {

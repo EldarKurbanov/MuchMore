@@ -5,4 +5,5 @@ import ru.eldardev.muchmore.screens.ScreensSettings;
 public class ViewSettings {
     static int PLAYERS_COUNT = 5;
     static float AVATAR_WIDTH = ScreensSettings.WIDTH / 6;
+    static int GENERAL_CARDS = 7;
 }
