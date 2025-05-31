@@ -1,4 +1,4 @@
-package ru.eldardev.muchmore.screens.gamescreen.view;
+package ru.eldardev.muchmore.screens.gamescreen.view.players;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
@@ -16,22 +16,22 @@ public class PlayersView extends Table {
 
         setDebug(Settings.DEBUG);
 
-        avatarTexture = new Texture(ViewResources.AVATAR);
-        avatars = new Image[ViewSettings.PLAYERS_COUNT];
+        avatarTexture = new Texture(PlayersViewResources.AVATAR);
+        avatars = new Image[PlayersViewSettings.PLAYERS_COUNT];
 
         for (int i = 0; i < avatars.length; i++) {
-            add(new Image(avatarTexture)).width(ViewSettings.AVATAR_WIDTH);
+            add(new Image(avatarTexture)).width(PlayersViewSettings.AVATAR_WIDTH);
         }
 
         row();
 
-        for (int i = 0; i < ViewSettings.PLAYERS_COUNT; i++) {
+        for (int i = 0; i < PlayersViewSettings.PLAYERS_COUNT; i++) {
             add(new Label("5m", skin));
         }
 
         row();
 
-        for (int i = 0; i < ViewSettings.PLAYERS_COUNT; i++) {
+        for (int i = 0; i < PlayersViewSettings.PLAYERS_COUNT; i++) {
             add(new Label("3k", skin));
         }
     }
