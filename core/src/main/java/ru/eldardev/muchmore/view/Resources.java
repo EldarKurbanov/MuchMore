@@ -1,4 +1,4 @@
-package ru.eldardev.muchmore.screens;
+package ru.eldardev.muchmore.view;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
