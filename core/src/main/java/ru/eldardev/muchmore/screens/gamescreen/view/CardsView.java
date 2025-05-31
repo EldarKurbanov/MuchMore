@@ -8,20 +8,20 @@ import ru.eldardev.muchmore.Settings;
 public class CardsView extends Table {
     public CardsView(Skin skin) {
         super(skin);
-        super.setDebug(Settings.DEBUG);
+        setDebug(Settings.DEBUG);
 
-        super.add(new Label("Cards of the player", skin))
+        add(new Label("Cards of the player", skin))
             .colspan(ViewSettings.GENERAL_CARDS)
             .height(ViewSettings.CARDS_VIEW_HEIGHT);
 
-        super.row();
+        row();
 
-        super.add(new Label("-----", skin)).colspan(ViewSettings.GENERAL_CARDS);
+        add(new Label("-----", skin)).colspan(ViewSettings.GENERAL_CARDS);
 
-        super.row();
+        row();
 
         for (int i = 0; i < ViewSettings.GENERAL_CARDS; i++) {
-            super.add(new Label("GC"+i, skin));
+            add(new Label("GC"+i, skin));
         }
     }
 }

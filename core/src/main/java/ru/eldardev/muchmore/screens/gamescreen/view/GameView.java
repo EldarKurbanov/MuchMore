@@ -10,14 +10,14 @@ public class GameView extends Table {
 
     public GameView() {
         super(new Skin(ScreensResources.SKIN));
-        super.setDebug(Settings.DEBUG);
-        super.setFillParent(true);
+        setDebug(Settings.DEBUG);
+        setFillParent(true);
 
         playersView = new PlayersView(super.getSkin());
 
-        super.add(playersView);
-        super.row();
-        super.add(new CardsView(super.getSkin()));
+        add(playersView);
+        row();
+        add(new CardsView(super.getSkin()));
     }
 
     public void dispose() {

@@ -14,25 +14,25 @@ public class PlayersView extends Table {
     public PlayersView(Skin skin) {
         super(skin);
 
-        super.setDebug(Settings.DEBUG);
+        setDebug(Settings.DEBUG);
 
         avatarTexture = new Texture(ViewResources.AVATAR);
         avatars = new Image[ViewSettings.PLAYERS_COUNT];
 
         for (int i = 0; i < avatars.length; i++) {
-            super.add(new Image(avatarTexture)).width(ViewSettings.AVATAR_WIDTH);
+            add(new Image(avatarTexture)).width(ViewSettings.AVATAR_WIDTH);
         }
 
-        super.row();
+        row();
 
         for (int i = 0; i < ViewSettings.PLAYERS_COUNT; i++) {
-            super.add(new Label("5m", skin));
+            add(new Label("5m", skin));
         }
 
-        super.row();
+        row();
 
         for (int i = 0; i < ViewSettings.PLAYERS_COUNT; i++) {
-            super.add(new Label("3k", skin));
+            add(new Label("3k", skin));
         }
     }
 
